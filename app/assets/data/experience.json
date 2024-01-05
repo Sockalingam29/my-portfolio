@@ -1,0 +1,46 @@
+{
+  "experience": [
+    {
+      "company": "Fidelity Investments",
+      "location": "Chennai, Tamil Nadu",
+      "position": "SWE Intern",
+      "startDate": "2023/06/01",
+      "endDate": "2023/08/15",
+      "description": "Was a part of the Credit Card Squad. Worked on batch processing using Spring Batch to sync the batch cycle of multiple files.Created GraphQL endpoint for an existing Payments REST API.",
+      "skills": [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "HTML",
+        "CSS",
+        "Spring Batch"
+      ]
+    },
+    {
+      "company": "XYZ Corporation",
+      "location": "Chennai, Tamil Nadu",
+      "position": "Full Stack Developer",
+      "startDate": "2018-05-01",
+      "endDate": "2019-12-31",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam n",
+      "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
+    },
+    {
+      "company": "XYZ Corporation",
+      "position": "Full Stack Developer",
+      "startDate": "2018-05-01",
+      "endDate": "2019-12-31",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam n",
+      "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
+    },
+    {
+      "company": "XYZ Corporation",
+      "position": "Full Stack Developer",
+      "startDate": "2018-05-01",
+      "endDate": "2019-12-31",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl vitae aliquam aliquam, nunc nisl aliquet nunc, vitae aliquam n",
+      "skills": ["JavaScript", "Node.js", "Express", "MongoDB", "HTML", "CSS"]
+    }
+  ]
+}
