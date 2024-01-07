@@ -1,7 +1,11 @@
+import Navbar from "../components/navbar";
 import Timeline from "../components/timeline";
 
 export default function page() {
     return (
-        <Timeline />
+        <div>
+            <Navbar />
+            <Timeline />
+        </div>
     )
 }
