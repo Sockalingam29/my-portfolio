@@ -1,6 +1,6 @@
 import '../styles/components/card.css'
 import { experience } from '../assets/data/experience.json'
-import Card from './card'
+import TimelineCard from './timelineCard'
 
 export default function Timeline() {
     return (
@@ -8,7 +8,7 @@ export default function Timeline() {
             <ul className="timeline">
                 {experience.map((item, index) => {
                     return (
-                        <Card item={item} index={index} experienceLength={experience.length} />
+                        <TimelineCard item={item} index={index} experienceLength={experience.length} />
                     )
                 })}
 

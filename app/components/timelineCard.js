@@ -1,6 +1,6 @@
 import Badge from './badge';
 
-export default function Card({ item, index, experienceLength }) {
+export default function TimelineCard({ item, index, experienceLength }) {
     return (
         <li className={index % 2 === 1 ? "timeline-inverted" : ""}>
             <div className="timeline-image">
