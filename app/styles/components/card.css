@@ -33,13 +33,13 @@ p {
 .timeline > li:nth-child(even) {
   position: relative;
   margin-left: 50%;
-  height: 260px;
+  height: 320px;
 }
 
 .timeline > li:nth-child(odd) {
   position: relative;
   margin-right: 50%;
-  height: 260px;
+  height: 320px;
 }
 
 .timeline > li .timeline-panel {
@@ -140,20 +140,20 @@ p {
   top: 32px;
   bottom: 0;
   width: 8px;
-  height: 280px;
+  height: 320px;
   background-color: #262626;
   border: 1px solid #404040;
   box-shadow: 0 0 2px #262626;
 }
 
 .timeline > li:nth-child(odd) .line {
-  transform: rotate(-17deg);
+  transform: rotate(-15deg);
   left: 100%;
 }
 
 .timeline > li:nth-child(even) .line {
   right: 100%;
-  transform: rotate(17deg);
+  transform: rotate(15deg);
 }
 
 .timeline > li .timeline-image {
@@ -193,7 +193,7 @@ p {
   margin: 1%;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1023px) {
   .timeline > li:nth-child(even),
   .timeline > li:nth-child(odd) {
     margin: 0;
