@@ -3,7 +3,7 @@ import Badge from './badge';
 export default function Card({ item, index, experienceLength }) {
     return (
         <li className={index % 2 === 1 ? "timeline-inverted" : ""}>
-            <div className="timeline-image timeline-image-red">
+            <div className="timeline-image">
             </div>
             <div className="timeline-panel">
                 <div >
