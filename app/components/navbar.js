@@ -14,11 +14,11 @@ export default function Navbar() {
                 <div className='flex justify-between items-center'>
                     <Link href='/' style={{ "fontFamily": "'Rubik Lines', system- ui" }} className="px-4 py-4 cursor-pointer hover:text-neutral-200 text-2xl lg:text-2xl tracking-wider">sockalingam</Link>
                     <div onClick={toggleNavbar} className='px-4 py-4'>
-                        {navbarOpen && <svg className="md:hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        {navbarOpen && <svg className="md:hidden h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>}
-                        {!navbarOpen && <svg className="md:hidden block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        {!navbarOpen && <svg className="md:hidden block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>}
                     </div>
                 </div>
