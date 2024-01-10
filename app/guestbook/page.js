@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "/app/api/auth/[...nextauth]/route";
 import { SignOutButton, SignInButton } from "./button";
 import GuestBookForm from "./form";
+import GuestBookEntries from "./entries";
 
 export default async function Home() {
 
@@ -19,6 +20,7 @@ export default async function Home() {
                 : (
                     <SignInButton />
                 )}
+            <GuestBookEntries />
         </div>
     );
 }
