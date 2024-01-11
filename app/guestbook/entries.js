@@ -1,23 +1,9 @@
 "use client";
 import useSWR from 'swr';
 
-export default function GuestBookEntries() {
+export default function GuestBookEntries({ messages }) {
 
-    const fetcher = async (url) => {
-        console.log("Fetching data!!!");
-        const res = await fetch(url);
-        const data = await res.json();
-        return data;
-    };
-
-    const { data: messages, error } = useSWR('/api/guestbook', fetcher);
-
-    if (error) {
-        console.log(error);
-        return <div className='italic'>Oops! There seems to be an error!</div>;
-    }
-
-    if (!messages) return <Loading />;
+    if (messages.length == 0) return <Loading />;
 
     return (
         <div>
