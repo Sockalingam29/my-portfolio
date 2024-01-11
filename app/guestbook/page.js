@@ -13,7 +13,7 @@ export default async function Home() {
             <h1 className="text-3xl font-medium">sign my guestbook</h1>
             {session?.user ? (
                 <>
-                    <GuestBookForm />
+                    <GuestBookForm session={session} />
                     <SignOutButton session={session} />
                 </>
             )

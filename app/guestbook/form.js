@@ -1,6 +1,28 @@
-export default function GuestBookForm() {
+"use client";
+
+export default function GuestBookForm({ session }) {
+    const postMessage = async (e) => {
+        e.preventDefault();
+        const body = {
+            message: e.target.entry.value,
+            name: session.user.name,
+            image: session.user.image,
+            email: session.user.email,
+        };
+        console.log(body);
+        const res = await fetch('/api/guestbook', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        });
+        e.target.entry.value = '';
+        console.log(res);
+    };
+
     return (
-        <form className="mt-6 relative max-w-2xl">
+        <form onSubmit={postMessage} className="mt-6 relative max-w-2xl">
             <input
                 aria-label="Your message"
                 placeholder="Your message..."
