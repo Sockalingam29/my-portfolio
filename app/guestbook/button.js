@@ -5,18 +5,15 @@ import Image from 'next/image'
 
 export function SignOutButton({ session }) {
     return (
-        <>
-            <div className="text-sm text-neutral-300 mt-2">
-                <span className="italic ">Signed in as {session.user.name} </span>
-                <button
-                    className="ml-2 font-semibold"
-                    onClick={() => signOut()}
-                >
-                    Sign out
-                </button>
-            </div>
-
-        </>
+        <div className="text-sm text-neutral-300 mt-2">
+            <span className="italic ">Signed in as {session.user.name} </span>
+            <button
+                className="ml-2 font-semibold"
+                onClick={() => signOut()}
+            >
+                Sign out
+            </button>
+        </div>
     )
 }
 
