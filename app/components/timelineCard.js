@@ -14,7 +14,7 @@ export default function TimelineCard({ item, index, experienceLength }) {
                         {item.position}
                     </h4>
                     <h5 className='mt-1 text-sm text-neutral-400'>
-                        {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(item.startDate)) + " " + new Date(item.startDate).getFullYear()} - {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(item.endDate)) + " " + new Date(item.endDate).getFullYear()} · {Math.floor((new Date(item.endDate == "Present" ? Date.now() : item.endDate) - new Date(item.startDate)) / (1000 * 60 * 60 * 24 * 30))} mos
+                        {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(item.startDate)) + " " + new Date(item.startDate).getFullYear()} - {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(item.endDate)) + " " + new Date(item.endDate).getFullYear()} · {Math.round((new Date(item.endDate == "Present" ? Date.now() : item.endDate) - new Date(item.startDate)) / (1000 * 60 * 60 * 24 * 30))} mos
                     </h5>
                     <h5 className='text-sm text-neutral-400'>
                         {item.location}
