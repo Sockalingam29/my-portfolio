@@ -32,6 +32,10 @@
   transition: all 0.5s ease-in-out;
 }
 
+.timeline > .timeline-inverted > .timeline-panel {
+  margin: 0 0 0 12px;
+}
+
 .timeline > li:nth-child(odd) .timeline-image {
   float: right;
 }
