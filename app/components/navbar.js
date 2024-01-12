@@ -22,12 +22,11 @@ export default function Navbar() {
                         </svg>}
                     </div>
                 </div>
-                <div className={navbarOpen ? "flex flex-col md:flex md:flex-row" : "hidden md:flex md:flex-row"}>
+                <div onClick={toggleNavbar} className={navbarOpen ? "flex flex-col md:flex md:flex-row" : "hidden md:flex md:flex-row"}>
                     <Link href='/' className="px-4 py-4 cursor-pointer hover:text-neutral-200 font-medium">home</Link>
                     <Link href="/experience" className="px-4 py-4 cursor-pointer hover:text-neutral-200 font-medium">experience</Link>
                     <Link href='/' className="px-4 py-4 cursor-pointer hover:text-neutral-200 font-medium">projects</Link>
                     <Link href='/guestbook' className="px-4 py-4 cursor-pointer hover:text-neutral-200 font-medium">guestbook</Link>
-
                 </div>
             </div >
         </div>
