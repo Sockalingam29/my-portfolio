@@ -20,7 +20,7 @@ export function SignOutButton({ session }) {
 export function SignInButton() {
     return (
         <button
-            className="px-3 my-6 py-2 border border-neutral-700 bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-100"
+            className="px-3 my-6 py-2 border border-neutral-700 bg-neutral-800 rounded text-sm inline-flex items-center leading-4 text-neutral-100"
             onClick={() => signIn('github')}
         >
             <Image src={githubLogo} alt="GitHub logo" width="20" height="20" />
