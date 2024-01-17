@@ -13,6 +13,52 @@
       "skills": ["Flutter", "Firebase", "Nearby API"],
       "demoUrl": "https://drive.google.com/file/d/1HFzRfbAdhQ4Gnc2p1IKb_vpfLU1ZV99E/view",
       "githubUrl": "https://github.com/Sockalingam29/Bluetooth-Attendance-App-B-Tap"
+    },
+    {
+      "name": "Memory-Lane",
+      "brief": "A fullstack web app to post your memories",
+      "teamSize": 1,
+      "description": [
+        "A social media web application built using MERN stack that helps in sharing your memories with the world",
+        "Users can create posts with images, like other posts, and also edit/delete their posts",
+        "Authentication is done using JWT and the password is hashed using bcrypt. Google OAuth is also implemented"
+      ],
+      "skills": [
+        "ReactJS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "OAuth",
+        "Redux",
+        "React Bootstrap",
+        "Netlify",
+        "Render"
+      ],
+      "websiteUrl": "https://memories-appln.netlify.app/",
+      "githubUrl": "https://github.com/Sockalingam29/memory-lane"
+    },
+    {
+      "name": "Online Chess",
+      "brief": "An online browser-based chess game",
+      "teamSize": 3,
+      "description": [
+        "An online chess web application with single and multiplayer modes",
+        "Players can create rooms and play with their friends or play solo against the chess engine",
+        "js-chess-engine is used for AI opponent logic and to maintain the game state",
+        "Socket.io enables players to play in real-time with their friends",
+        "The project was presented at FS'tival-22 held at TCE, Madurai "
+      ],
+      "skills": [
+        "ReactJS",
+        "Tailwind CSS",
+        "Socket.io",
+        "Express.js",
+        "js-chess-engine",
+        "Netlify"
+      ],
+      "websiteUrl": "https://comforting-tapioca-f89e05.netlify.app/",
+      "githubUrl": "https://github.com/Sockalingam29/chess-pwa"
     }
   ]
 }
