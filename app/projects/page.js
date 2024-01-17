@@ -52,7 +52,7 @@ export default function page() {
                                     )
                                 })}
                             </ul>
-                            <div className='flex mt-4'>
+                            <div className='flex flex-wrap mt-4'>
                                 {project.skills.map((tag, index) => {
                                     return (
                                         <Badge skill={tag} />
