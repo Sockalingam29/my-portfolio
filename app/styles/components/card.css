@@ -139,7 +139,7 @@
     height: auto;
     width: 100%;
     border: 2px solid #404040;
-    margin: 0 12px 2rem 12px;
+    margin: 0 12px 2rem 12px !important;
     text-align: left;
     visibility: visible;
     opacity: 1;
