@@ -16,29 +16,29 @@ export default function page() {
                     return (
                         <li className='pageCard p-6 border border-neutral-900 rounded-xl'>
                             <div>
-                                <div className='flex justify-between items-center'>
+                                <div className='md:flex justify-between items-center'>
                                     <div>
                                         <h2 className='text-xl font-semibold'>{project.name}</h2>
                                         <h3 className='italic'>{project.brief}</h3>
                                     </div>
 
-                                    <div className='flex'>
+                                    <div className='flex flex-wrap'>
                                         {project.githubUrl && <a href={project.githubUrl} target='_blank'>
-                                            <button className="px-3 mx-2 py-2 border border-neutral-700 bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-100">
+                                            <button className="px-3 mt-2 mr-2 py-2 border border-neutral-700 bg-neutral-800 rounded text-sm inline-flex items-center leading-4 text-neutral-100">
                                                 <Image src={githubLogo} alt="GitHub logo" width="20" height="20" />
-                                                <div className="ml-3">GitHub</div>
+                                                <div className="ml-2">Code</div>
                                             </button>
                                         </a>}
                                         {project.websiteUrl && <a href={project.websiteUrl} target='_blank'>
-                                            <button className="px-3 mx-2 py-2 border border-neutral-700 bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-100">
+                                            <button className="px-3 mt-2 mr-2 py-2 border border-neutral-700 bg-neutral-800 rounded text-sm inline-flex items-center leading-4 text-neutral-100">
                                                 <Image src={websiteImg} alt="GitHub logo" width="20" height="20" />
-                                                <div className="ml-3">Deployed Link</div>
+                                                <div className="ml-2">Live URL</div>
                                             </button>
                                         </a>}
                                         {project.demoUrl && <a href={project.demoUrl} target='_blank'>
-                                            <button className="px-3 mx-2 py-2 border border-neutral-700 bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-100">
+                                            <button className="px-3 mt-2  mr-2 py-2 border border-neutral-700 bg-neutral-800 rounded text-sm inline-flex items-center leading-4 text-neutral-100">
                                                 <Image src={demoImg} alt="GitHub logo" width="20" height="20" />
-                                                <div className="ml-3">Demo</div>
+                                                <div className="ml-2">Demo</div>
                                             </button>
                                         </a>}
                                     </div>
