@@ -3,7 +3,7 @@
     {
       "name": "B-Tap",
       "brief": "A Bluetooth based Attendance App",
-      "team-size": 3,
+      "teamSize": 3,
       "description": [
         "A mobile app that utilizes the Nearby Connections API for instant attendance tracking in classes",
         "Employs an advertise-discover communication model where the teacher is an advertiser and the students are discoverers",

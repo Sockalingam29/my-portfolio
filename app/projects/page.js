@@ -20,6 +20,7 @@ export default function page() {
                                     <div>
                                         <h2 className='text-xl font-semibold'>{project.name}</h2>
                                         <h3 className='italic'>{project.brief}</h3>
+                                        {project.teamSize > 1 && <h4 className='text-sm font-light'>Team size: {project.teamSize}</h4>}
                                     </div>
 
                                     <div className='flex flex-wrap'>
