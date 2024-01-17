@@ -10,7 +10,7 @@ import websiteImg from "../assets/images/website.png";
 export default function page() {
     return (
         <div className="px-4 my-16 mx-auto lg:w-4/5">
-            <h1 className="text-3xl font-medium mb-14">my projects</h1>
+            <h1 className="text-3xl font-medium mb-14">featured projects</h1>
             <ul>
                 {projects.map((project, index) => {
                     return (
@@ -66,6 +66,8 @@ export default function page() {
                 )}
 
             </ul>
+            <h1 className="text-3xl font-medium mb-6">other projects</h1>
+            <p className='font-light text-lg mx-auto'>I have worked on many other projects. Check them out on <a className='font-semibold underline' href='https://www.github.com/sockalingam29' target='_blank'>my GitHub profile</a>.</p>
         </div >
     )
 }
