@@ -4,16 +4,14 @@
       "name": "B-Tap",
       "brief": "A Bluetooth based Attendance App",
       "team-size": 3,
-      "image": "https://user-images.githubusercontent.com/74052417/230737028-adacf3c9-0203-4704-97f6-4e50ea951e2c.jpg",
       "description": [
         "A mobile app that utilizes the Nearby Connections API for instant attendance tracking in classes",
-        "Employs an advertise-discover communication model for 1-to-N communication",
-        "Teacher initiates attendance by selecting semester, subject, and slot, then begins advertising; students discover the advertiser (teacher) by just tapping a button.",
-        "Upon detection, student devices verify data and record attendance",
-        "Presented at the IoT Expo by AICTE SPICES"
+        "Employs an advertise-discover communication model where the teacher is an advertiser and the students are discoverers",
+        "Teacher can initiate the attendance process and can also export the attendance as a CSV file; Students can mark attendance with just a tap of a button",
+        "The project was presented at the IoT Expo organized by AICTE SPICES"
       ],
       "skills": ["Flutter", "Firebase", "Nearby API"],
-      "demoUrl": "https://drive.google.com/file/d/1cQbXP1WT1pOQxz1wibfQph7k-P2mJTVQ/view?usp=sharing",
+      "demoUrl": "https://drive.google.com/file/d/1HFzRfbAdhQ4Gnc2p1IKb_vpfLU1ZV99E/view",
       "githubUrl": "https://github.com/Sockalingam29/Bluetooth-Attendance-App-B-Tap"
     }
   ]
