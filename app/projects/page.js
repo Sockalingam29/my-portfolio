@@ -14,7 +14,7 @@ export default function page() {
             <ul>
                 {projects.map((project, index) => {
                     return (
-                        <li className='pageCard p-6 mb-12 border border-neutral-900 rounded-xl'>
+                        <li className='pageCard p-6 mb-14 border border-neutral-800 rounded-xl'>
                             <div>
                                 <div className='md:flex justify-between items-center'>
                                     <div>
