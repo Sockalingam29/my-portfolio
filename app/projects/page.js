@@ -67,7 +67,7 @@ export default function page() {
 
             </ul>
             <h1 className="text-3xl font-medium mb-6">other projects</h1>
-            <p className='font-light text-lg mx-auto'>I have worked on many other projects. Check them out on <a className='font-semibold underline' href='https://www.github.com/sockalingam29' target='_blank'>my GitHub profile</a>.</p>
+            <p className='font-light text-lg mx-auto'>I have worked on other projects as well. Check them out on <a className='font-semibold underline' href='https://www.github.com/sockalingam29' target='_blank'>my GitHub profile</a>.</p>
         </div >
     )
 }
