@@ -7,6 +7,14 @@ export default function GuestBookForm({ fetchGuestBookEntries }) {
 
     const postMessage = async (e) => {
         e.preventDefault();
+        if (e.target.entry.value.length > 500) {
+            alert('Message cannot be more than 500 characters.');
+            return;
+        }
+        if (e.target.name.value.length > 30) {
+            alert('Name cannot be more than 30 characters.');
+            return;
+        }
         const flag = restrictedWords.includes(e.target.entry.value) || restrictedWords.includes(e.target.name.value);
         setIsPending(true);
         const body = {
