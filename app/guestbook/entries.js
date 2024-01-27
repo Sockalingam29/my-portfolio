@@ -8,11 +8,12 @@ export default function GuestBookEntries({ messages }) {
         <div>
             <ul className='mt-12 flex flex-col-reverse'>
                 {messages.map((user) => (
-                    <li key={user._id} className='mb-10'>
+                    !user.flag &&
+                    <li key={user._id} className='mb-8'>
                         <div>{user.message}</div>
                         <div className='mt-1 flex items-center'>
-                            <img loading='lazy' className='h-5 w-5 rounded-full' src={user.image} />
-                            <span className='font-light text-sm ms-2 text-neutral-300'>{user.name}</span>
+                            {/* <img loading='lazy' className='h-5 w-5 rounded-full' src={user.image} /> */}
+                            <span className='font-light text-sm text-neutral-300'>{user.name ? user.name : "Anonymous user"}</span>
                         </div>
                     </li>
                 ))}
