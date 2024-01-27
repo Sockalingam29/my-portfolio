@@ -4,6 +4,12 @@ export default function GuestBookEntries({ messages }) {
 
     if (messages.length == 0) return <Loading />;
 
+    if (messages.length === 1 && messages[0] === "Error fetching data") return (
+        <div className='mt-12'>
+            <p className='text-neutral-300'>Oops! Error fetching data :(</p>
+        </div>
+    );
+
     return (
         <div>
             <ul className='mt-12 flex flex-col-reverse'>

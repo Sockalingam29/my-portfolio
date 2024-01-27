@@ -13,6 +13,7 @@ export default function GuestBookContents() {
             const jsonResponse = await response.json();
             setMessages(jsonResponse);
         } catch (error) {
+            setMessages(['Error fetching data']);
             console.error('Error fetching data:', error);
         }
     };
