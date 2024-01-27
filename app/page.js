@@ -1,12 +1,15 @@
 import githubLogo from "./assets/images/github.png";
 import leetcodeLogo from "./assets/images/leetcode.png";
-import myPhoto from "./assets/images/my-photo.webp";
+import myPhoto1 from "./assets/images/myPhoto1.webp";
+import myPhoto2 from "./assets/images/myPhoto2.webp";
+import myPhoto3 from "./assets/images/myPhoto3.webp";
 import Image from 'next/image'
 
 export default function Home() {
+  const imageNum = Math.floor(Math.random() * 3) + 1;
   return (
     <div className="px-4 my-12 mx-auto lg:w-4/5">
-      <Image src={myPhoto} alt='my-photo' className="rounded-full border border-neutral-800 mb-6 h-20 w-20 object-cover" loading="lazy" />
+      <Image src={imageNum == 1 ? myPhoto1 : (imageNum == 2 ? myPhoto2 : myPhoto3)} alt='my-photo' className="rounded-full border border-neutral-800 mb-6 h-24 w-24 object-cover" loading="lazy" />
       <h1 className="text-3xl font-medium mb-8">hey, I'm sockalingam! 👋</h1>
       <div className="lg:max-w-2xl font-light mb-8">
         <p className="mb-2">I'm a final year Computer Science Engineering student at Thiagarajar College of Engineering, Madurai. In my most recent position, I worked as a Software Engineering Intern at Fidelity Investments in Summer '23.</p>
