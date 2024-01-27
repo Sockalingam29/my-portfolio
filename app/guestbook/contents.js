@@ -1,10 +1,10 @@
 "use client";
 import GuestBookForm from "./form";
 import GuestBookEntries from "./entries";
-import { SignOutButton, SignInButton } from "./button";
+// import { SignOutButton, SignInButton } from "./button";
 import { useEffect, useState } from "react";
 
-export default function GuestBookContents({ session }) {
+export default function GuestBookContents() {
     const [messages, setMessages] = useState([]);
 
     const fetchGuestBookEntries = async () => {
@@ -23,15 +23,15 @@ export default function GuestBookContents({ session }) {
 
     return (
         <div>
-            {session ? (
-                <>
-                    <GuestBookForm session={session} fetchGuestBookEntries={fetchGuestBookEntries} />
-                    <SignOutButton session={session} />
-                </>
+            <GuestBookForm fetchGuestBookEntries={fetchGuestBookEntries} />
+            {/* {session ? (
+                <> 
+             <SignOutButton session={session} /> 
+             </>
             )
                 : (
                     <SignInButton />
-                )}
+                )} */}
             <GuestBookEntries messages={messages} />
         </div>
     )
