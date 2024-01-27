@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import restrictedWords from 'profane-words'
 
 export default function GuestBookForm({ fetchGuestBookEntries }) {
@@ -8,36 +10,64 @@ export default function GuestBookForm({ fetchGuestBookEntries }) {
     const postMessage = async (e) => {
         e.preventDefault();
         if (e.target.entry.value.length > 500) {
-            alert('Message cannot be more than 500 characters.');
-            return;
-        }
-        if (e.target.name.value.length > 30) {
-            alert('Name cannot be more than 30 characters.');
-            return;
-        }
-        const flag = restrictedWords.includes(e.target.entry.value) || restrictedWords.includes(e.target.name.value);
-        setIsPending(true);
-        const body = {
-            message: e.target.entry.value,
-            name: e.target.name.value,
-            flag: flag
-        };
+            toast.error('Message can\'t be more than 500 characters', {
+                position: "top-center",
+                autoClose: 2000,
+                closeOnClick: true,
+                draggable: true,
+                theme: "dark"
+            });
 
-        const res = await fetch('/api/guestbook', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(body),
-        });
-        await fetchGuestBookEntries();
-        if (flag) {
-            alert('Thank you! Your message has been submitted for review.');
         }
-        e.target.entry.value = '';
-        e.target.name.value = '';
-        console.log(res);
-        setIsPending(false);
+        else if (e.target.name.value.length > 30) {
+            toast.error('Name can\'t be more than 30 characters', {
+                position: "top-center",
+                autoClose: 2000,
+                closeOnClick: true,
+                draggable: true,
+                theme: "dark"
+            });
+        }
+        else {
+            const flag = restrictedWords.includes(e.target.entry.value) || restrictedWords.includes(e.target.name.value);
+            setIsPending(true);
+            const body = {
+                message: e.target.entry.value,
+                name: e.target.name.value,
+                flag: flag
+            };
+
+            const res = await fetch('/api/guestbook', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body),
+            });
+            await fetchGuestBookEntries();
+            if (flag) {
+                toast.info('Thank you! Your message has been submitted for review.', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    closeOnClick: true,
+                    draggable: true,
+                    theme: "dark"
+                });
+            }
+            else {
+                toast.success('Thanks for your entry :)', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    closeOnClick: true,
+                    draggable: true,
+                    theme: "dark"
+                });
+            }
+            setIsPending(false);
+            console.log(res);
+            e.target.entry.value = '';
+            e.target.name.value = '';
+        }
     };
 
     return (
@@ -81,6 +111,7 @@ export default function GuestBookForm({ fetchGuestBookEntries }) {
                     </button>
                 </div>
             </div>
+            <ToastContainer />
         </form>
 
     )
