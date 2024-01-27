@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className="px-4 my-12 mx-auto lg:w-4/5">
-      <Image src={myPhoto} className="rounded-full border border-neutral-800 mb-6 h-20 w-20 object-cover" loading="lazy" />
+      <Image src={myPhoto} alt='my-photo' className="rounded-full border border-neutral-800 mb-6 h-20 w-20 object-cover" loading="lazy" />
       <h1 className="text-3xl font-medium mb-8">hey, I'm sockalingam! 👋</h1>
       <div className="lg:max-w-2xl font-light mb-8">
         <p className="mb-2">I'm a final year Computer Science Engineering student at Thiagarajar College of Engineering, Madurai. In my most recent position, I worked as a Software Engineering Intern at Fidelity Investments in Summer '23.</p>
