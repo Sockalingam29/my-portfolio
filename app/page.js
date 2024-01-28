@@ -1,5 +1,4 @@
 import githubLogo from "./assets/images/github.png";
-import leetcodeLogo from "./assets/images/leetcode.png";
 import myPhoto1 from "./assets/images/myPhoto1.webp";
 import myPhoto2 from "./assets/images/myPhoto2.webp";
 import myPhoto3 from "./assets/images/myPhoto3.webp";
