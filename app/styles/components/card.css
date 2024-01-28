@@ -66,6 +66,14 @@
   );
 }
 
+.timeline > li .timeline-image-green {
+  background: radial-gradient(
+    circle,
+    rgba(81, 157, 28, 1) 0%,
+    rgba(0, 74, 8, 1) 100%
+  );
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   text-align: left;
 }
