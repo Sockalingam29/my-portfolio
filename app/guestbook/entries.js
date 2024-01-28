@@ -2,7 +2,7 @@
 
 export default function GuestBookEntries({ messages }) {
 
-    if (messages.length == 0) return <Loading />;
+    if (messages.length === 0) return <Loading />;
 
     if (messages.length === 1 && messages[0] === "Error fetching data") return (
         <div className='mt-12'>
@@ -30,11 +30,14 @@ export default function GuestBookEntries({ messages }) {
 
 const Loading = () => {
     return (
-        <div className='mt-12 flex items-center'>
-            <span className='sr-only'>Loading...</span>
-            <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce [animation-delay:-0.3s]'></div>
-            <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]'></div>
-            <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce'></div>
+        <div>
+            <div className='mt-12 flex items-center'>
+                <span className='sr-only'>Loading...</span>
+                <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+                <div className='h-4 w-4 me-2 bg-white rounded-full animate-bounce'></div>
+            </div>
+            <div className="text-sm font-light mt-4">Hang tight! This might take a moment. </div>
         </div>
     )
 }
