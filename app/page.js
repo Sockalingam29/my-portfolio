@@ -11,7 +11,7 @@ export default function Home() {
       <Image src={imageNum == 1 ? myPhoto1 : (imageNum == 2 ? myPhoto2 : myPhoto3)} alt='my-photo' className="rounded-full border border-neutral-800 mb-6 h-24 w-24 object-cover" loading="lazy" />
       <h1 className="text-3xl font-medium mb-8">hey, I'm sockalingam! 👋</h1>
       <div className="lg:max-w-2xl font-light mb-8">
-        <p className="mb-2">I'm a final year Computer Science Engineering student at Thiagarajar College of Engineering, Madurai. In my most recent position, I worked as a Software Engineering Intern at Fidelity Investments in Summer '23.</p>
+        <p className="mb-2">I'm a final year Computer Science Engineering student at Thiagarajar College of Engineering, Madurai. I'm currently working as a Software Engineering Intern at Fidelity Investments.</p>
         <p>I like developing web applications and specialize in MERN stack. I actively participate in programming contests. I'm an avid reader and I love to learn any random topics that come my way.</p>
       </div>
       <h2 className="text-2xl font-medium mb-4">contact me:</h2>
