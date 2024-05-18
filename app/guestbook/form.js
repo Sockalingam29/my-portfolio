@@ -29,7 +29,7 @@ export default function GuestBookForm({ fetchGuestBookEntries }) {
             });
         }
         else {
-            const flag = restrictedWords.includes(e.target.entry.value) || restrictedWords.includes(e.target.name.value);
+            const flag = handleRestrictedWords(e.target.entry.value) || handleRestrictedWords(e.target.name.value);
             setIsPending(true);
             const body = {
                 message: e.target.entry.value,
@@ -69,6 +69,12 @@ export default function GuestBookForm({ fetchGuestBookEntries }) {
             e.target.name.value = '';
         }
     };
+
+    const handleRestrictedWords = (message) => {
+        const words = message.split(/\s+/);
+        const flag = words.some(word => restrictedWords.includes(word.toLowerCase()));
+        return flag;
+    }
 
     return (
         <form onSubmit={postMessage} className="max-w-2xl">
