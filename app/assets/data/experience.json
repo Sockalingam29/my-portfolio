@@ -5,9 +5,17 @@
       "location": "Chennai, India",
       "position": "SWE Intern",
       "startDate": "2024/01/30",
-      "endDate": "Present",
-      "description": "",
-      "skills": []
+      "endDate": "2024/06/28",
+      "description": "Worked on the Billpay product. Created an API and an async app from scratch that helps in sending notifications to customers for various events. Coded the logic and completed perf testing, resource testing and functional testing.",
+      "skills": [
+        "Java",
+        "Dropwizard",
+        "AWS",
+        "Jenkins",
+        "CI/CD",
+        "JUnit",
+        "Mockito"
+      ]
     },
     {
       "company": "Fidelity Investments",
