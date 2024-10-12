@@ -3,10 +3,29 @@
     {
       "company": "Fidelity Investments",
       "location": "Chennai, India",
+      "position": "Executive Graduate Trainee",
+      "startDate": "2024/08/12",
+      "endDate": "Present",
+      "description": "Currently undergoing the flagship LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
+      "skills": [
+        "Java",
+        "Angular",
+        "Spring",
+        "Spring Boot",
+        "MyBatis",
+        "JUnit",
+        "Mockito",
+        "Jasmine",
+        "Cypress"
+      ]
+    },
+    {
+      "company": "Fidelity Investments",
+      "location": "Chennai, India",
       "position": "SWE Intern",
       "startDate": "2024/01/30",
       "endDate": "2024/06/28",
-      "description": "Worked on the Billpay product. Created an API and an async app from scratch that helps in sending notifications to customers for various events. Coded the logic and completed perf testing, resource testing and functional testing.",
+      "description": "Worked on the billpay application developing capabilities to send notifications to customers. Created an API and an asynchronous application to handle the events from a 3rd party vendor and send it to the notification service. Coded the logic and completed perf testing, resource testing and functional testing.",
       "skills": [
         "Java",
         "Dropwizard",
