@@ -8,7 +8,7 @@
         "A mobile app that utilizes the Nearby Connections API for instant attendance tracking in classes",
         "Employs an advertise-discover communication model where the teacher is an advertiser and the students are discoverers",
         "Teacher can initiate the attendance process and can also export the attendance as a CSV file; Students can mark attendance with just a tap of a button",
-        "The project was presented at the IoT Expo organized by AICTE SPICES is also published on the Play Store"
+        "The project was presented at the IoT Expo organized by AICTE SPICES and is also published on the Play Store"
       ],
       "skills": ["Flutter", "Firebase", "Nearby API"],
       "demoUrl": "https://drive.google.com/file/d/1HFzRfbAdhQ4Gnc2p1IKb_vpfLU1ZV99E/view",
