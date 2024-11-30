@@ -3,6 +3,7 @@ import myPhoto1 from "./assets/images/myPhoto1.webp";
 import myPhoto2 from "./assets/images/myPhoto2.webp";
 import myPhoto3 from "./assets/images/myPhoto3.webp";
 import Image from 'next/image'
+import { about } from './assets/data/about.json'
 
 export default function Home() {
   const imageNum = Math.floor(Math.random() * 3) + 1;
@@ -11,8 +12,13 @@ export default function Home() {
       <Image src={imageNum == 1 ? myPhoto1 : (imageNum == 2 ? myPhoto2 : myPhoto3)} alt='my-photo' className="rounded-full border border-neutral-800 mb-6 h-24 w-24 object-cover" loading="lazy" />
       <h1 className="text-3xl font-medium mb-8">hey, I'm sockalingam! 👋</h1>
       <div className="lg:max-w-2xl font-light mb-8">
-        <p className="mb-2">I work at Fidelity Investments as an Executive Graduate Trainee. I’m currently undergoing the flagship LEAP training program in full stack development which includes technologies like Angular, Spring, and Java. I’ve previously interned at Fidelity for a total of 7 months working on developing capabilities for the Billpay and Credit Card products. </p>
-        <p>I graduated from Thiagarajar College of Engineering, Madurai in 2024 with a degree in Computer Science. I like developing web applications and specialize in MERN stack. Outside of coding, I’m an avid reader and love diving into random topics—whether it's tech-related or something completely different!</p>
+        {
+          about.map((item, index) => {
+            return (
+              <p key={index} className="mb-2">{item}</p>
+            )
+          })
+        }
       </div>
       <h2 className="text-2xl font-medium mb-4">contact me:</h2>
       <div className="lg:max-w-2xl flex text-lg font-light flex-wrap">
