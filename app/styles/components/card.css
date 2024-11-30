@@ -101,20 +101,20 @@
   top: 32px;
   bottom: 0;
   width: 8px;
-  height: 320px;
+  height: 330px;
   background-color: #262626;
   border: 1px solid #404040;
   box-shadow: 0 0 2px #262626;
 }
 
 .timeline > li:nth-child(odd) .line {
-  transform: rotate(-15deg);
+  transform: rotate(-14deg);
   left: 100%;
 }
 
 .timeline > li:nth-child(even) .line {
   right: 100%;
-  transform: rotate(15deg);
+  transform: rotate(14deg);
 }
 
 .timeline > li .timeline-image {
