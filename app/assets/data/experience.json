@@ -6,9 +6,13 @@
       "position": "Executive Graduate Trainee",
       "startDate": "2024/08/12",
       "endDate": "Present",
-      "description": "Currently undergoing the flagship LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
+      "description": "Currently developing capabilities for Cash management products. Undewent the LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
       "skills": [
         "Java",
+        "Dropwizard",
+        "AWS",
+        "Jenkins",
+        "CI/CD",
         "Angular",
         "Spring",
         "Spring Boot",
@@ -25,7 +29,7 @@
       "position": "SWE Intern",
       "startDate": "2024/01/30",
       "endDate": "2024/06/28",
-      "description": "Worked on the billpay application developing capabilities to send notifications to customers. Created an API and an asynchronous application to handle the events from a 3rd party vendor and send it to the notification service. Coded the logic and completed perf testing, resource testing and functional testing.",
+      "description": "Worked on the Billpay application developing capabilities to send notifications to customers. Created an API and an async application to handle the events from a vendor and send it to the notification service. Coded the logic and completed perfomance, resource and functional testing.",
       "skills": [
         "Java",
         "Dropwizard",
