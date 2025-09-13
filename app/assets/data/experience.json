@@ -3,10 +3,29 @@
     {
       "company": "Fidelity Investments",
       "location": "Chennai, India",
-      "position": "Executive Graduate Trainee",
-      "startDate": "2024/08/12",
+      "position": "Full Stack Engineer",
+      "startDate": "2025/08/01",
       "endDate": "Present",
-      "description": "Currently developing capabilities for Cash management products. Undewent the LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
+      "description": "Working on a major vendor migration project as a full stack engineer",
+      "skills": [
+        "Java",
+        "Dropwizard",
+        "AWS",
+        "Jenkins",
+        "CI/CD",
+        "Angular",
+        "JUnit",
+        "Mockito",
+        "Jasmine"
+      ]
+    },
+    {
+      "company": "Fidelity Investments",
+      "location": "Chennai, India",
+      "position": "Associate Software Engineer",
+      "startDate": "2024/08/12",
+      "endDate": "2025/07/31",
+      "description": "Fully developed and owned a project that integrated DynamoDB data with Snowflake transferring 156k existing records and processes 2000 change data events everyday. Undewent the LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
       "skills": [
         "Java",
         "Dropwizard",
