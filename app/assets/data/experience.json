@@ -25,7 +25,7 @@
       "position": "Associate Software Engineer",
       "startDate": "2024/08/12",
       "endDate": "2025/07/31",
-      "description": "Fully developed and owned a project that integrated DynamoDB data with Snowflake transferring 156k existing records and processes 2000 change data events everyday. Undewent the LEAP training in full stack development which includes technologies like Angular, Spring, and Java.",
+      "description": "Fully developed and owned a project that integrated DynamoDB data with Snowflake transferring 156k existing records and processes 2000 change data events everyday.",
       "skills": [
         "Java",
         "Dropwizard",
