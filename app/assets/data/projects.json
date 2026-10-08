@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "BootUp",
+      "brief": "One-click Workspace Launcher",
+      "teamSize": 2,
+      "description": [
+        "A Windows desktop application that allows users to launch their developer workspaces in a single click",
+        "Helps avoid the hassle of opening multiple applications and websites, and running the same local setup commands everyday",
+        "Natively supports 10 popular applications like VS Code, Chrome and Microsoft apps with customizations and lets users add their own applications to the workspace",
+        "Users can create multiple workspaces for different projects",
+        "The app is published in the Microsoft Store and is also available for download on GitHub"
+      ],
+      "skills": ["Tauri", "Angular", "Rust", "Tailwind CSS"],
+      "websiteUrl": "https://getbootup.vercel.app/"
+    },
+    {
       "name": "B-Tap",
       "brief": "A Bluetooth based Attendance App",
       "teamSize": 3,
